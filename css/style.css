@@ -1,101 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-}
-*, *:before, *:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus, :active{outline: none;}
-a:focus, a:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
-
-html, body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-input, button, textarea{font-family: inherit;}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-input::-ms-clear{display:none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style-type: none;}
-img{vertical-align: top;}
+:focus,
+:active {
+    outline: none;
+}
 
-h1,h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
 
 
 /* ///////////////////// */
 
 
-body{
+body {
     font-family: "Alexandria", sans-serif;
     font-size: 16px;
     color: #999999;
     background-color: black;
     line-height: 150%;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
-h1{
+h1 {
     font-weight: 700;
     font-size: 64px;
     line-height: 110%;
     color: #E5E5E5;
 }
-h2{
+
+h2 {
     color: #E5E5E5;
     font-size: 48px;
     line-height: 100%;
 }
-h3{
+
+h3 {
     color: #E5E5E5;
     font-size: 20px;
 }
-a{
+
+a {
     font-size: inherit;
     color: inherit;
 }
-.green{
+
+.green {
     color: #9DFF3A;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-.block{
+
+.block {
     display: flex;
     align-items: center;
     gap: 5px;
     width: fit-content;
     padding: 10px 12px;
-    border: 1px solid #4D4D4D;
+    border: 2px solid #4D4D4D;
     border-radius: 24px;
 }
-.btn{
+
+.btn {
     padding: 10px 24px;
     background-color: #9DFF3A;
     color: black;
     border-radius: 40px;
     width: fit-content;
 }
-.btn_transparrent{
+
+.btn_transparrent {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -104,36 +165,50 @@ a{
     border: 1px solid #4D4D4D;
     padding: 15px 30px;
 }
-.view{
+
+.view {
     display: none;
 }
-.active{
+
+.active {
     color: #E5E5E5;
 }
-.block{
+
+.block {
     font-size: 14px;
 }
 
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
 
 
 
 
-.header{
+.header {
     padding: 30px 0;
 }
 
-.header_main{
+.header_main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header_links{
+
+.header_links {
     display: flex;
     gap: 40px;
 }
-.header_log{
+
+.header_log {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -143,41 +218,68 @@ a{
 
 
 
-.hero .container{
+.hero .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 80px 0;
 
 }
 
-.hero_txt{
+.hero_txt {
     display: flex;
     flex-direction: column;
     gap: 30px;
     max-width: 620px;
 }
 
-.hero_btn{
+.hero_btn {
     display: flex;
     gap: 20px;
 }
 
 
 
+.partners{
+    background-color: #0F0F0F;
+    padding: 40px 0;
+}
 
-
-.partner_title{
+.partner_title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.partner_wrapper{
+.partner_wrapper {
     display: flex;
     justify-content: center;
     gap: 72px;
 }
+
+
+
+.stats{
+    padding: 120px 0;
+    background-color: #0F0F0F;
+}
+
+.stats_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    margin-top: 50px;
+}
+
+.stats_box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.stats_box p{
+    font-size: 20px;
+}
+
 
 
 
@@ -188,49 +290,74 @@ a{
 
 
 @media (max-width: 510px) {
-    
-    .view{
+
+    .view {
         display: block;
     }
-    .none{
+
+    .none {
         display: none;
     }
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-    h2{
-        font-size: 28px;
+
+    h2 {
+        font-size: 30px;
     }
-    .btn{
+
+    .btn {
         font-size: 16px;
         padding: 14px 24px;
     }
-
-
+    .block{
+        padding: 12px 20px;
+        font-size: 16px;
+    }
     /* hero  */
-    .hero .container{
+    .hero .container {
         flex-direction: column;
         gap: 35px;
         margin-top: 20px;
+        padding: 20px 0;
     }
-    .hero_txt{
+
+    .hero_txt {
         align-items: center;
         text-align: center;
         width: 100%;
     }
-    .hero_btn{
+
+    .hero_btn {
         flex-direction: column;
         align-items: center;
     }
+
     /* hero  */
 
     /* partner  */
-    .partner_wrapper{
+    .partner_wrapper {
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 25px;
     }
-    .partner_box img{
+
+    .partner_box img {
         width: 100px;
     }
+
     /* partner  */
+
+    /* stats */
+    .stats_wrapper{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .stats_box h2{
+        font-size: 50px;
+    }
+    .stats_box p{
+        font-size: 25px;
+    }
+    /* stats */
 }
