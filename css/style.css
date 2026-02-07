@@ -288,18 +288,24 @@ a {
 
 
 
-.feature_wrapper{
+.feature {
+    padding: 80px 0;
+}
+
+.feature_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
 }
-.feature_wrapper_box{
+
+.feature_wrapper_box {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.feature_box{
+
+.feature_box {
     display: flex;
     align-items: start;
     gap: 30px;
@@ -309,7 +315,8 @@ a {
     background-color: #0F0F0F;
     max-width: 600px;
 }
-.feature_txt{
+
+.feature_txt {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -317,10 +324,45 @@ a {
 
 
 
+.testimonial {
+    background-color: #0F0F0F;
+    padding: 80px 0;
+}
+
+.testimonial_wrapper {
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial_box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    color: #E5E5E5;
+    border: 1px solid #4D4D4D;
+    border-radius: 16px;
+    background-color: #000000;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.autor_spec {
+    color: #4D4D4D;
+    font-size: 12px;
+}
+
 @media (max-width: 510px) {
-    body{
+    body {
         line-height: 130%;
     }
+
     .view {
         display: block;
     }
@@ -397,13 +439,28 @@ a {
     /* stats */
 
     /* feature */
-    .feature_wrapper{
+    .feature_wrapper {
         flex-direction: column;
         gap: 20px;
     }
-    .feature_box{
+
+    .feature_box {
         padding: 24px 20px;
         width: 100%;
     }
+
     /* feature */
+
+    /* testimonial  */
+    .testimonial_wrapper {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .testimonial_box {
+        font-size: 20px;
+        /* padding: 40px; */
+    }
+
+    /* testimonial  */
 }
