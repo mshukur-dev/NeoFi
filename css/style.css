@@ -327,6 +327,7 @@ a {
 .testimonial {
     background-color: #0F0F0F;
     padding: 80px 0;
+    margin-bottom: 50px;
 }
 
 .testimonial_wrapper {
@@ -358,6 +359,75 @@ a {
     font-size: 12px;
 }
 
+
+
+
+.answers {
+    margin-bottom: 50px;
+}
+
+.answers_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.answers_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    width: 100%;
+    color: #E5E5E5;
+    border: 1px solid #2E2E2E;
+}
+
+
+
+
+
+
+
+.revolutionary {
+    padding: 80px 0;
+    background-color: #0F0F0F;
+    margin-bottom: 50px;
+}
+
+.square_btn {
+    border-radius: 0;
+}
+
+.footer_main{
+    padding: 80px 0;
+    /* border-bottom: 1px solid #999999; */
+}
+.footer_main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.footer_box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_inp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #999999;
+}
+input{
+    background-color: transparent;
+}
+
+.footer_bottom .container{
+    text-align: center;
+    padding: 10px;
+}
 @media (max-width: 510px) {
     body {
         line-height: 130%;
@@ -451,6 +521,8 @@ a {
 
     /* feature */
 
+
+
     /* testimonial  */
     .testimonial_wrapper {
         grid-template-columns: 1fr;
@@ -458,9 +530,16 @@ a {
     }
 
     .testimonial_box {
-        font-size: 20px;
+        font-size: 16px;
         /* padding: 40px; */
     }
 
     /* testimonial  */
+
+    .footer_main .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        align-items: center ;
+    }
 }
