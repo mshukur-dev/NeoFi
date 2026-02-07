@@ -178,7 +178,7 @@ a {
     font-size: 14px;
 }
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -240,7 +240,7 @@ a {
 
 
 
-.partners{
+.partners {
     background-color: #0F0F0F;
     padding: 40px 0;
 }
@@ -258,39 +258,69 @@ a {
 
 
 
-.stats{
+
+
+
+.stats {
     padding: 120px 0;
     background-color: #0F0F0F;
+    margin-bottom: 50px;
 }
 
-.stats_wrapper{
+.stats_wrapper {
     display: flex;
     justify-content: center;
     gap: 72px;
     margin-top: 50px;
 }
 
-.stats_box{
+.stats_box {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 20px;
 }
-.stats_box p{
+
+.stats_box p {
     font-size: 20px;
 }
 
 
 
 
-
-
-
+.feature_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.feature_wrapper_box{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.feature_box{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    padding: 30px 20px;
+    border: 1px solid #4D4D4D;
+    border-radius: 20px;
+    background-color: #0F0F0F;
+    max-width: 600px;
+}
+.feature_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 
 @media (max-width: 510px) {
-
+    body{
+        line-height: 130%;
+    }
     .view {
         display: block;
     }
@@ -311,10 +341,12 @@ a {
         font-size: 16px;
         padding: 14px 24px;
     }
-    .block{
+
+    .block {
         padding: 12px 20px;
         font-size: 16px;
     }
+
     /* hero  */
     .hero .container {
         flex-direction: column;
@@ -349,15 +381,29 @@ a {
     /* partner  */
 
     /* stats */
-    .stats_wrapper{
+    .stats_wrapper {
         flex-direction: column;
         gap: 24px;
     }
-    .stats_box h2{
+
+    .stats_box h2 {
         font-size: 50px;
     }
-    .stats_box p{
+
+    .stats_box p {
         font-size: 25px;
     }
+
     /* stats */
+
+    /* feature */
+    .feature_wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature_box{
+        padding: 24px 20px;
+        width: 100%;
+    }
+    /* feature */
 }
